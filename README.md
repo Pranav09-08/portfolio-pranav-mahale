@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Student Portfolio (Premium Frontend Stack)
 
-## Getting Started
+Professional, modular portfolio built with:
 
-First, run the development server:
+- Next.js (App Router) + TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- MDX blog (file-based, no backend)
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Folder Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+src/
+	app/
+		blog/
+			[slug]/page.tsx
+			page.tsx
+		globals.css
+		layout.tsx
+		page.tsx
+	components/
+		layout/
+			site-footer.tsx
+			site-header.tsx
+		sections/
+			about-section.tsx
+			contact-section.tsx
+			experience-section.tsx
+			hero-section.tsx
+			projects-section.tsx
+			skills-section.tsx
+		ui/
+			container.tsx
+			reveal.tsx
+			section-title.tsx
+	config/
+		site.ts
+	content/
+		blog/
+			*.mdx
+	data/
+		portfolio.ts
+	lib/
+		mdx.ts
+		utils.ts
+	types/
+		portfolio.ts
+public/
+	documents/
+		Pranav_Kiran_Mahale_Resume.pdf
+```
 
-## Learn More
+## Personalize With Your Resume
 
-To learn more about Next.js, take a look at the following resources:
+1. Update profile details in src/config/site.ts.
+2. Replace skills, projects, and experiences in src/data/portfolio.ts.
+3. Keep your resume PDF in public/documents and update resumePath if filename changes.
+4. Add or edit blog posts in src/content/blog using MDX frontmatter.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Blog Frontmatter Format
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```md
+---
+title: "Post title"
+excerpt: "Short summary"
+publishedAt: "2026-04-26"
+tags:
+	- tag1
+	- tag2
+---
+```
 
-## Deploy on Vercel
+## Build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm run start
+```

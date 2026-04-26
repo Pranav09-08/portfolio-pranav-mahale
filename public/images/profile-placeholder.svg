@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="120" x2="780" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF1FF"/>
+      <stop offset="1" stop-color="#D7E4FF"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="170" y1="220" x2="730" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#165DFF"/>
+      <stop offset="1" stop-color="#FF7A45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1100" rx="42" fill="url(#bg)"/>
+  <rect x="60" y="60" width="780" height="980" rx="34" stroke="url(#ring)" stroke-width="8" stroke-dasharray="16 16"/>
+
+  <circle cx="450" cy="390" r="140" fill="#C5D8FF"/>
+  <rect x="260" y="560" width="380" height="250" rx="120" fill="#C5D8FF"/>
+
+  <text x="450" y="890" text-anchor="middle" font-family="Sora, Arial, sans-serif" font-size="36" fill="#0C1F3F" font-weight="700">
+    Add Your Photo
+  </text>
+  <text x="450" y="932" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="22" fill="#435E83">
+    public/images/profile.jpg
+  </text>
+</svg>
