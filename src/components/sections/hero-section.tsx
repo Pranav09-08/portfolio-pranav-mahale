@@ -109,9 +109,6 @@ export const HeroSection = () => {
                     priority
                   />
                 </div>
-                <p className="profile-note mt-4 rounded-xl px-4 py-3 text-xs text-muted">
-                  Add your image to public/images/profile.jpeg to personalize this portrait area.
-                </p>
               </div>
             </div>
 
